@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+font-family: 'Montserrat';
+color: gray;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+    font-style: bold;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.wrap-image{
+    text-align: center;
+}
+
+.face{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+.intro{
+    border: 1px solid #000000;
+    margin: 50px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+    padding-top: 10px;
+}
+
+.hobby{
+    text-align: center;
+}
+.hobbycont{
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+
+h3{
+    text-align: center;
+}
