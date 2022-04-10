@@ -45,15 +45,20 @@ h1{
 
 #face{
     width: 250px;
-    height: 300px;
-    border: 1px solid #ebebeb;
-    border-radius: 50%;
+    height: 250px;
+    border-radius: 100%;
     box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.5);
     margin-top: 10px;
 }
 
+#face.hover{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 0;
+    border-radius: 0;
+}
+
 #intro{
-    border: 1px solid #000000;
     margin: 50px;
     color: #000000;
     text-align: center;
@@ -61,10 +66,11 @@ h1{
     margin-right: 200px;
     background-color: white;
     padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 #intro.hover{
-    background: grey;
+    background: rgba(0, 0, 0, 0.311);
     color: white;
 }
 
@@ -74,7 +80,7 @@ h1{
 .hobbycont{
     height: 100px;
     width:100px;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 h3{
