@@ -1,6 +1,6 @@
 
 //1. 제목을 클릭시 글자 바꾸기 '자기소개 페이지' <-> '안녕하세요!'
-let title = document.getElementById('title');
+let title = document.getElementById('introTitle');
 title.addEventListener('click', function () {
     if (title.innerHTML == '자기소개 페이지') {
         title.innerHTML = '안녕하세요!';
@@ -9,7 +9,7 @@ title.addEventListener('click', function () {
 });
 
 //2. hover 소개 부분 색 반전
-let intro = document.getElementById('intro');
+let intro = document.getElementById('introContent');
 intro.addEventListener('mouseover', function () {
     intro.setAttribute('class', 'hover');
 });
@@ -19,15 +19,15 @@ intro.addEventListener('mouseout', function () {
 
 //3. 버튼 클릭시 dark mode <-> light mode
 let dark = document.querySelector('body');
-document.getElementById('toggle').addEventListener('click', function () {
+document.getElementById('darkModeToggle').addEventListener('click', function () {
     if (dark.getAttribute('class') != 'dark-mode') {
         dark.setAttribute('class', 'dark-mode');
-        document.getElementById('toggle').innerHTML = "light mode";
+        document.getElementById('darkModeToggle').innerHTML = "light mode";
     }
 
     else {
         dark.removeAttribute('class');
-        document.getElementById('toggle').innerHTML = "dark mode";
+        document.getElementById('darkModeToggle').innerHTML = "dark mode";
     }
 });
 
@@ -45,9 +45,9 @@ document.getElementById('toggle').addEventListener('click', function () {
 let img = document.querySelector('img');
 img.addEventListener('mouseover', function () {
     img.src = "./bingbing.png";
-    document.getElementById('face').setAttribute('class', 'hover');
+    document.getElementById('profileImg').setAttribute('class', 'hover');
 });
 img.addEventListener('mouseout', function () {
     img.src = "./face.jpg";
-    document.getElementById('face').removeAttribute('class');
+    document.getElementById('profileImg').removeAttribute('class');
 });

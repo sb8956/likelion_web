@@ -14,7 +14,7 @@ body.dark-mode{
     color: #efefef;
 }
 
-#toggle{
+#darkModeToggle{
     padding: 5px;
     margin: 5px;
     position: relative;
@@ -28,7 +28,7 @@ body.dark-mode{
     color: #6e6e6e;
 }
 
-h1{
+#introTitle{
     font-size: 20px;
     color: #000000;
     text-align: center;
@@ -40,11 +40,11 @@ h1{
     cursor: pointer;
 }
 
-.wrap-image{
+.wrapImg{
     text-align: center;
 }
 
-#face{
+#profileImg{
     width: 250px;
     height: 250px;
     border-radius: 100%;
@@ -52,14 +52,14 @@ h1{
     margin-top: 10px;
 }
 
-#face.hover{
+#profileImg.hover{
     width: 250px;
     height: 250px;
     box-shadow: 0 0 0;
     border-radius: 0;
 }
 
-#intro{
+#introContent{
     margin: 50px;
     color: #000000;
     text-align: center;
@@ -70,15 +70,15 @@ h1{
     padding-bottom: 5px;
 }
 
-#intro.hover{
+#introContent.hover{
     background: rgba(0, 0, 0, 0.311);
     color: white;
 }
 
-.hobby{
+.wrapHobby{
     text-align: center;
 }
-.hobbycont{
+.hobbyContent{
     height: 100px;
     width:100px;
     border-radius: 100%;
