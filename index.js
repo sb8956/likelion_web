@@ -1,4 +1,3 @@
-
 //1. 제목을 클릭시 글자 바꾸기 '자기소개 페이지' <-> '안녕하세요!'
 let title = document.getElementById('introTitle');
 title.addEventListener('click', function () {
@@ -19,17 +18,34 @@ intro.addEventListener('mouseout', function () {
 
 //3. 버튼 클릭시 dark mode <-> light mode
 let dark = document.querySelector('body');
-document.getElementById('darkModeToggle').addEventListener('click', function () {
-    if (dark.getAttribute('class') != 'dark-mode') {
-        dark.setAttribute('class', 'dark-mode');
-        document.getElementById('darkModeToggle').innerHTML = "light mode";
-    }
+let isDakrMode = false // 다크모드 판별 식별자
+let toggle = document.getElementById('darkModeToggle');
 
-    else {
-        dark.removeAttribute('class');
-        document.getElementById('darkModeToggle').innerHTML = "dark mode";
+document.getElementById('darkModeToggle').addEventListener('click', function () {
+    if (!isDakrMode ){ // 다크모드가 false일 때
+        isDakrMode = true;
+        dark.style.backgroundColor='#0000008d';
+        dark.style.color='#efefef';
+        toggle.innerHTML = "light mode";
+    } else {
+        isDakrMode = false;
+        dark.style.backgroundColor= '#faebd7';
+        dark.style.color = "#000"
+        toggle.innerHTML = "dark mode";
     }
 });
+
+// document.getElementById('darkModeToggle').addEventListener('click', function () {
+//     if (dark.getAttribute('class') != 'dark-mode') {
+//         dark.setAttribute('class', 'dark-mode');
+//         document.getElementById('darkModeToggle').innerHTML = "light mode";
+//     }
+
+//     else {
+//         dark.removeAttribute('class');
+//         document.getElementById('darkModeToggle').innerHTML = "dark mode";
+//     }
+// });
 
 // document.getElementById('toggle').addEventListener("click", function () {
 //     if (document.querySelector('body').classList.contains('dark-mode')) {

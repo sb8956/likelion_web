@@ -6,12 +6,7 @@ font-family: 'Montserrat';
 }
 
 body{
-    background-color: antiquewhite;
-}
-
-body.dark-mode{
-    background-color: #0000008d;
-    color: #efefef;
+    background-color: #faebd7;
 }
 
 #darkModeToggle{
