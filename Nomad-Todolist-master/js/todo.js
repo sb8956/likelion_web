@@ -21,11 +21,11 @@ function saveToDos() {
 }
 
 function deleteToDo(event) {
-  //
+  //event 태그의 부모태그를 찾아 li에 할당한다.
   const li = event.target.parentElement;
   li.remove();
 
-  //
+  //toDo.id가 li.id에 존재하지 않는것을 제외시킨다. 
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
   saveToDos();
 }
@@ -67,7 +67,7 @@ function paintToDo(newTodo) {
 }
 
 function handleToDoSubmit(event) {
-  //
+  //preventDefault()를 통해 이벤트의 기본동작을 실행하는 것을 막는다. 
   event.preventDefault();
 
   //[quiz] toDoInput의 값을 불러와 newTodo에 할당.
@@ -97,12 +97,12 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 //savedToDos가 localStorage에 존재한다면,
 if (savedToDos !== null) {
 
-  //
+  //savedToDos는 string 객체이므로 parse를 이용해 json으로 변환 시켜줌
   const parsedToDos = JSON.parse(savedToDos);
 
   //toDos에 이를 할당,
   toDos = parsedToDos;
 
-  //
+  //배열 내장함수인 forEach를 이용하여 for문 처럼 돌면서 paintToDo 해주기 
   parsedToDos.forEach(paintToDo);
 }
