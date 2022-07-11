@@ -29,7 +29,7 @@ document.getElementById('darkModeToggle').addEventListener('click', function () 
         toggle.innerHTML = "light mode";
     } else {
         isDakrMode = false;
-        dark.style.backgroundColor= '#faebd7';
+        dark.style.backgroundColor= '#ffffff';
         dark.style.color = "#000"
         toggle.innerHTML = "dark mode";
     }
